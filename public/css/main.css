@@ -1,0 +1,224 @@
+/* Main CSS - Tüm sayfalarda kullanılacak temel stiller */
+
+/* Reset ve Temel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Koyu gri, siyah ve kapalı kırmızı tonları */
+    --primary-color: #B91C1C;        /* Kapalı kırmızı */
+    --primary-dark: #7F1D1D;         /* Koyu kırmızı */
+    --primary-light: #FECACA;        /* Açık kırmızı */
+    --secondary-color: #374151;      /* Koyu gri */
+    --text-color: #111827;           /* Siyahımsı gri */
+    --text-light: #6B7280;           /* Orta gri */
+    --text-lighter: #9CA3AF;         /* Açık gri */
+    --bg-color: #FFFFFF;             /* Beyaz */
+    --bg-light: #F9FAFB;             /* Çok açık gri */
+    --bg-dark: #1F2937;              /* Çok koyu gri */
+    --bg-darker: #111827;            /* Neredeyse siyah */
+    --border-color: #E5E7EB;         /* Açık gri border */
+    --border-dark: #374151;          /* Koyu gri border */
+    --success-color: #10B981;        /* Yeşil */
+    --warning-color: #F59E0B;        /* Turuncu */
+    --danger-color: #EF4444;         /* Parlak kırmızı */
+    
+    /* Border radius - Apple tarzı */
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+    --radius-xl: 30px;
+    
+    /* Gölgeler */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.15);
+    
+    /* Geçişler */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tipografi */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* Butonlar */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    border: none;
+    gap: 8px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(185, 28, 28, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.btn-small {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Kartlar */
+.card {
+    background-color: var(--bg-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Section Genel Stilleri */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.section-description {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-light);
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}

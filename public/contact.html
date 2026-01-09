@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | PCMAN | Bilişim Teknolojileri - Dijital Dönüşüm Çözümleri</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="PCMAN Bilişim Logo" class="logo-image">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                <a href="services.html" class="nav-link">Hizmetlerimiz</a>
+                <a href="about.html" class="nav-link">Hakkımızda</a>
+                <a href="contact.html" class="nav-link active">İletişim</a>
+                <a href="tel:+905558979342" class="nav-btn">Hemen Ara</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Bilişim Çözümleri İçin <span class="highlight">İletişime Geçin</span></h1>
+                <p class="contact-hero-description">Dijital dönüşüm yolculuğunuzda size destek olmak için buradayız. Teknoloji ihtiyaçlarınız için ücretsiz danışmanlık alın.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Ücretsiz Danışmanlık Talebi</h2>
+                        <p class="section-subtitle">24 saat içinde ihtiyacınıza özel çözüm önerilerimizle dönüş yapacağız.</p>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/mvzgellq" method="POST" class="contact-form">
+                        <!-- Formspree required fields -->
+                        <input type="hidden" name="_subject" value="PCMAN Bilişim - Yeni Danışmanlık Talebi">
+                        <input type="hidden" name="_language" value="tr">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <!-- Form fields -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Adınız Soyadınız *</label>
+                                <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Şirket Adı</label>
+                                <input type="text" id="company" name="company" placeholder="Şirket adınız (varsa)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon Numaranız *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz *</label>
+                                <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">İlgilendiğiniz Hizmet *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Bir hizmet seçin</option>
+                                <option value="web-design">Web Tasarım & Geliştirme</option>
+                                <option value="mobile-app">Mobil Uygulama Geliştirme</option>
+                                <option value="custom-software">Özel Yazılım Çözümleri</option>
+                                <option value="ai-automation">Yapay Zeka & Otomasyon</option>
+                                <option value="ecommerce">E-Ticaret Çözümleri</option>
+                                <option value="seo">SEO & Dijital Pazarlama</option>
+                                <option value="it-outsourcing">IT Dış Kaynak Hizmetleri</option>
+                                <option value="support">Teknik Destek & Bakım</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Proje Bütçeniz</label>
+                            <select id="budget" name="budget">
+                                <option value="">Bütçe aralığı seçin</option>
+                                <option value="0-5000">0 - 5.000 TL</option>
+                                <option value="5000-15000">5.000 - 15.000 TL</option>
+                                <option value="15000-50000">15.000 - 50.000 TL</option>
+                                <option value="50000+">50.000 TL +</option>
+                                <option value="not-sure">Henüz belirlemedim</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Proje Detayları / İhtiyaçlarınız *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Dijital dönüşüm projeniz hakkında detaylı bilgi verin..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                <label for="newsletter">Teknoloji haberleri ve özel tekliflerden haberdar olmak istiyorum</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Danışmanlık Talebi Gönder
+                            </button>
+                        </div>
+                        
+                        <!-- Form Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Talebiniz başarıyla gönderildi. En kısa sürede size dönüş yapacağız.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="section-header">
+                        <h2 class="section-title">İletişim Bilgilerimiz</h2>
+                        <p class="section-subtitle">Size en uygun yöntemle bize ulaşabilirsiniz.</p>
+                    </div>
+                    
+                    <div class="contact-info-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3 class="contact-card-title">Telefon</h3>
+                                <p class="contact-card-text">7/24 teknik destek ve danışmanlık</p>
+                                <a href="tel:+905558979342" class="contact-card-link">0555 897 93 42</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3 class="contact-card-title">E-posta</h3>
+                                <p class="contact-card-text">Proje teklifleri ve genel iletişim</p>
+                                <a href="mailto:info@pcmanbilisim.com" class="contact-card-link">info@pcmanbilisim.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3 class="contact-card-title">Ofis Adresimiz</h3>
+                                <p class="contact-card-text">İstanbul merkez ofisimiz</p>
+                                <address class="contact-card-address">
+                                    Şirintepe Mah. Ayçiçeği Sk. No:1A<br>
+                                    Kağıthane / İstanbul
+                                </address>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3 class="contact-card-title">Çalışma Saatlerimiz</h3>
+                                <p class="contact-card-text">Ofis ve online danışmanlık saatleri</p>
+                                <div class="contact-hours">
+                                    <div class="hour-item">
+                                        <span>Pazartesi - Cuma</span>
+                                        <span>09:00 - 19:00</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Cumartesi</span>
+                                        <span>10:00 - 17:00</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span>Pazar</span>
+                                        <span>Online Destek</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Map -->
+                    <div class="contact-map">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7453861087135!2d28.98764941593339!3d41.08792617929574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1d0214196cd%3A0xeeb6e8c8e8c8e8c8!2s%C5%9Eirintepe%20Mah.%20Ay%C3%A7i%C3%A7e%C4%9Fi%20Sk.%20No%3A1A%2C%20Ka%C4%9F%C4%B1thane%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1642345678901!5m2!1str!2str"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="PCMAN Bilişim Teknolojileri Konum Haritası"
+                                class="google-map">
+                            </iframe>
+                            <div class="map-overlay">
+                                <a href="https://maps.google.com/?q=Şirintepe Mah. Ayçiçeği Sk. No:1A Kağıthane/İstanbul" target="_blank" class="btn btn-outline map-open-btn">
+                                    <i class="fas fa-external-link-alt"></i> Haritada Aç
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Contact -->
+                    <div class="emergency-contact">
+                        <div class="emergency-content">
+                            <i class="fas fa-comments"></i>
+                            <div>
+                                <h3>Online Danışmanlık</h3>
+                                <p>Hızlı destek için sosyal medya hesaplarımız</p>
+                            </div>
+                        </div>
+                        <div class="social-contact-buttons">
+                            <a href="https://wa.me/905558979342" target="_blank" class="btn btn-outline btn-small">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://www.instagram.com/pcmanbilisim/" target="_blank" class="btn btn-outline btn-small">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+                <p class="section-subtitle">Dijital çözümler hakkında merak ettikleriniz</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Web tasarım projelerinde ne kadar sürede teslimat yapıyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kurumsal web siteleri için 3-4 hafta, e-ticaret siteleri için 4-6 hafta, özel yazılım projeleri için proje kapsamına göre 2-3 ay arasında teslimat yapıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>IT dış kaynak hizmeti için ne tür firmalarla çalışıyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>5-50 çalışanlı küçük ve orta ölçekli işletmelerle çalışıyoruz. Özellikle IT personeli istihdam etmek istemeyen, teknoloji altyapısını profesyonellere devretmek isteyen firmalar için ideal çözümler sunuyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Özel yazılım geliştirme süreciniz nasıl işliyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1) İhtiyaç analizi, 2) Teknik çözüm önerisi, 3) Prototip geliştirme, 4) Geliştirme ve test, 5) Yayınlama ve eğitim, 6) Destek ve bakım şeklinde 6 aşamalı bir süreç izliyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Mobil uygulama geliştirme için hangi teknolojileri kullanıyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Native uygulamalar için Swift (iOS) ve Kotlin (Android), cross-platform çözümler için React Native ve Flutter kullanıyoruz. Proje gereksinimlerine göre en uygun teknolojiyi öneriyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>SEO çalışmalarınızda hangi stratejileri izliyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>White-hat SEO teknikleri kullanıyoruz. Teknik SEO optimizasyonu, içerik stratejisi, backlink çalışmaları ve lokal SEO optimizasyonu ile Google'da organik görünürlüğünüzü artırıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Yapay zeka çözümleriniz neleri kapsıyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chatbot geliştirme, veri analizi ve tahminleme modelleri, süreç otomasyonu (RPA), görüntü işleme, doğal dil işleme (NLP) ve öneri sistemleri gibi AI çözümleri sunuyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proje bütçesi nasıl belirleniyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proje kapsamı, teknik gereksinimler, geliştirme süresi ve kullanılacak teknolojilere göre özelleştirilmiş teklif hazırlıyoruz. Aylık abonelik veya tek seferlik proje modeli seçeneklerimiz bulunuyor.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Destek ve bakım hizmetleriniz neleri içeriyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hosting yönetimi, güvenlik güncellemeleri, yedekleme, performans optimizasyonu, içerik güncellemeleri, teknik destek ve acil müdahale hizmetleri sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="contact-cta-content">
+                <h2 class="contact-cta-title">Dijital Dönüşümünüz İçin Harekete Geçin</h2>
+                <p class="contact-cta-description">İşinizi teknolojiyle güçlendirmek için doğru adrestesiniz. Hemen iletişime geçin, size özel çözüm önerilerimizi sunalım.</p>
+                <div class="contact-cta-buttons">
+                    <a href="tel:+905558979342" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> 0555 897 93 42
+                    </a>
+                    <a href="#contact-form" class="btn btn-secondary btn-large">
+                        <i class="fas fa-file-alt"></i> Ücretsiz Teklif Alın
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="PCMAN Bilişim Logo" class="footer-logo-image">
+                    </div>
+                    <p class="footer-about">Profesyonel bilişim çözümleri sunan, dijital dönüşüm yolculuğunuzda yanınızda olan bir teknoloji firmasıyız.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pcmanbilisim/" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@PCMANBILISIMTEKNOLOJILERI" class="social-link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@pcman54" class="social-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hizmetlerimiz</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#web-design">Web Tasarım & Geliştirme</a></li>
+                        <li><a href="services.html#mobile-app">Mobil Uygulama Geliştirme</a></li>
+                        <li><a href="services.html#custom-software">Özel Yazılım Çözümleri</a></li>
+                        <li><a href="services.html#ai-automation">Yapay Zeka ve Otomasyon</a></li>
+                        <li><a href="services.html#it-outsourcing">IT Dış Kaynak Hizmetleri</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="services.html">Hizmetlerimiz</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 0555 897 93 42</li>
+                        <li><i class="fas fa-envelope"></i> info@pcmanbilisim.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Şirintepe Mah. Ayçiçeği Sk. No:1A Kağıthane/İstanbul</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 PCMAN Bilişim Teknolojileri. Tüm hakları saklıdır.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Çerez Politikası</a>
+                    <a href="#">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
