@@ -12,7 +12,7 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/services', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'about.html')); // Fixed: should be services.html
+    res.sendFile(path.join(__dirname, '../public', 'services.html')); // Fixed: should be services.html
 });
 
 router.get('/contact', (req, res) => {
