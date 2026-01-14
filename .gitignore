@@ -6,4 +6,5 @@ logs/
 *.ini
 pcman_mail
 pcman_mail.pub
-.pcman
+*.pcman
+*.sh
