@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Tentacles -->
+  <g fill="#e53935" stroke="#e53935" stroke-width="10" stroke-linecap="round">
+    <line x1="216" y1="60" x2="216" y2="100"/>
+    <line x1="256" y1="50" x2="256" y2="100"/>
+    <line x1="296" y1="60" x2="296" y2="100"/>
+    <circle cx="216" cy="50" r="8"/>
+    <circle cx="256" cy="40" r="8"/>
+    <circle cx="296" cy="50" r="8"/>
+  </g>
+
+  <!-- Shield (bottom softened and wider) -->
+  <path
+    fill="#e53935"
+    d="
+      M96 120
+      Q256 40 416 120
+      V300
+      C416 380 320 460 256 480
+      C192 460 96 380 96 300
+      Z
+    "
+  />
+
+  <!-- Power icon -->
+  <circle
+    cx="256"
+    cy="260"
+    r="92"
+    fill="none"
+    stroke="#000"
+    stroke-width="34"
+  />
+
+  <line
+    x1="256"
+    y1="150"
+    x2="256"
+    y2="260"
+    stroke="#000"
+    stroke-width="34"
+    stroke-linecap="round"
+  />
+
+</svg>
