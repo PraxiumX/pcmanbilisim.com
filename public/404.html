@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sayfa Bulunamadı | PCMAN Bilişim</title>
+    <meta name="description" content="Aradığınız sayfa bulunamadı. PCMAN Bilişim Teknolojileri: İstanbul'da teknik servis, web tasarım, mobil uygulama, kamera sistemleri ve yazılım geliştirme hizmetleri.">
+    <meta name="robots" content="noindex, follow">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17871740948"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17871740948');
+    </script>
+    
+    <style>
+        /* 404 Page Specific Styles */
+        .error-page {
+            padding: 180px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(31, 41, 55, 0.95), rgba(17, 24, 39, 0.9)),
+                        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .error-description {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .error-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-large {
+            padding: 15px 30px;
+            font-size: 1.125rem;
+            min-width: 200px;
+        }
+        
+        .btn-outline-white {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--bg-darker);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-page {
+                padding: 150px 0 80px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .error-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-large {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="PCMAN Bilişim Ana Sayfa">
+                <img src="img/logo.png" alt="PCMAN Bilişim Teknolojileri Logo" class="logo-image" width="150" height="50">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mobil Menü">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                <a href="services.html" class="nav-link">Hizmetlerimiz</a>
+                <a href="about.html" class="nav-link">Hakkımızda</a>
+                <a href="contact.html" class="nav-link">İletişim</a>
+                <a href="tel:+905558979342" class="nav-btn">Hemen Ara</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Content -->
+    <section class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Sayfa Bulunamadı</h1>
+                <p class="error-description">
+                    Aradığınız sayfa taşınmış, silinmiş veya adı değiştirilmiş olabilir. 
+                    Ana sayfaya dönerek hizmetlerimizi keşfedebilir veya doğrudan bizimle iletişime geçebilirsiniz.
+                </p>
+                <div class="error-buttons">
+                    <a href="index.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-home"></i> Ana Sayfaya Dön
+                    </a>
+                    <a href="tel:+905558979342" class="btn btn-outline-white btn-large">
+                        <i class="fas fa-phone"></i> 0555 897 93 42
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="PCMAN Bilişim Teknolojileri Logo" class="footer-logo-image" width="150" height="50">
+                    </div>
+                    <p class="footer-about">İstanbul Kağıthane'de profesyonel teknik ve yazılım çözümleri sunan, dijital dönüşüm yolculuğunuzda yanınızda olan bir bilişim teknolojileri firmasıyız.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pcmanbilisim/" class="social-link" aria-label="Instagram" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@PCMANBILISIMTEKNOLOJILERI" class="social-link" aria-label="YouTube" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@pcman54" class="social-link" aria-label="TikTok" rel="noopener noreferrer">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="services.html">Hizmetlerimiz</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> <a href="tel:+905558979342">0555 897 93 42</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@pcmanbilisim.com">info@pcmanbilisim.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Şirintepe Mah. Ayçiçeği Sk. No:1A Kağıthane/İstanbul</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 PCMAN Bilişim Teknolojileri. Tüm hakları saklıdır.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Gizlilik Politikası</a>
+                    <a href="terms.html">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
