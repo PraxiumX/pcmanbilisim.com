@@ -12,7 +12,7 @@ const LOG_CONFIG = {
     // File settings
     MAX_FILE_SIZE: 1024 * 1024 * 1024,      // 1GB per file
     MAX_ACTIVE_FILES: 2,                    // 2 active files (2GB)
-    MAX_ARCHIVE_FILES: 1000,                // 1000 archive files
+    MAX_ARCHIVE_FILES: 10,                  // 10 archive files
     
     // Buffering
     BUFFER_SIZE: 200,                       // Buffer size

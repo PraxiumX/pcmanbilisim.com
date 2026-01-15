@@ -10,21 +10,21 @@
     <meta name="author" content="PCMAN Bilişim Teknolojileri">
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pcmanbilisim.com/custom-software.html">
+    <meta property="og:url" content="https://pcmanbilisim.com/services/custom-software">
     <meta property="og:title" content="Özel Yazılım Çözümleri | PCMAN Bilişim - İstanbul">
     <meta property="og:description" content="İstanbul'da CRM, ERP sistemleri, işletmelere özel yazılım geliştirme, otomasyon sistemleri.">
-    <meta property="og:image" content="https://pcmanbilisim.com/img/og-image.jpg">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="tr_TR">
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pcmanbilisim.com/custom-software.html">
+    <meta property="twitter:url" content="https://pcmanbilisim.com/services/custom-software">
     <meta property="twitter:title" content="Özel Yazılım Çözümleri | PCMAN Bilişim - İstanbul">
     <meta property="twitter:description" content="İstanbul'da CRM, ERP sistemleri, işletmelere özel yazılım geliştirme.">
-    <meta property="twitter:image" content="https://pcmanbilisim.com/img/og-image.jpg">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
     
-    <link rel="canonical" href="https://pcmanbilisim.com/custom-software.html">
+    <link rel="canonical" href="https://pcmanbilisim.com/services/custom-software">
     
     <script type="application/ld+json">
     {
@@ -48,22 +48,24 @@
     }
     </script>
     
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <link rel="mask-icon" href="img/logo.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/logo.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17871740948"></script>
     <script>
@@ -75,33 +77,14 @@
     
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="alternate" hreflang="tr" href="https://pcmanbilisim.com/custom-software.html" />
+    <link rel="alternate" hreflang="tr" href="https://pcmanbilisim.com/services/custom-software" />
     <meta name="geo.region" content="TR-34" />
     <meta name="geo.placename" content="İstanbul" />
     <meta name="geo.position" content="41.087926;28.987649" />
     <meta name="language" content="Turkish">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="PCMAN Bilişim Teknolojileri Logo" class="logo-image">
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link">Ana Sayfa</a>
-                <a href="services.html" class="nav-link">Hizmetlerimiz</a>
-                <a href="about.html" class="nav-link">Hakkımızda</a>
-                <a href="contact.html" class="nav-link">İletişim</a>
-                <a href="tel:+905558979342" class="nav-btn">Hemen Ara</a>
-            </div>
-        </div>
-    </nav>
+    {{> navbar active="services"}}
 
     <!-- Hero Section -->
     <section class="services-hero">
@@ -119,7 +102,10 @@
             <div class="service-detail">
                 <div class="service-detail-header">
                     <div class="service-detail-icon">
-                        <i class="fas fa-laptop-code"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
                     </div>
                     <h2 class="service-detail-title">Özel Yazılım Çözümleri</h2>
                     <p class="service-detail-subtitle">İş süreçlerinize özel otomasyon sistemleri ve yazılım çözümleri</p>
@@ -127,7 +113,7 @@
                 
                 <div class="service-detail-content">
                     <div class="service-detail-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Özel Yazılım Geliştirme">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Özel Yazılım Geliştirme" loading="lazy">
                     </div>
                     
                     <div class="service-detail-text">
@@ -136,27 +122,45 @@
                         
                         <div class="service-features">
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>CRM (Müşteri İlişkileri Yönetimi) Sistemleri</span>
                             </div>
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>ERP (Kurumsal Kaynak Planlama) Çözümleri</span>
                             </div>
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>Depo ve Stok Yönetim Yazılımları</span>
                             </div>
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>Üretim Takip ve Planlama Sistemleri</span>
                             </div>
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>Fatura ve Muhasebe Otomasyonları</span>
                             </div>
                             <div class="service-feature">
-                                <i class="fas fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                                 <span>Personel ve İnsan Kaynakları Yazılımları</span>
                             </div>
                         </div>
@@ -186,11 +190,21 @@
                         </div>
                         
                         <div class="service-cta">
-                            <a href="contact.html" class="btn btn-primary">
-                                <i class="fas fa-file-alt"></i> Ücretsiz Teklif Alın
+                            <a href="/contact" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text">
+                                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                    <path d="M10 9H8"></path>
+                                    <path d="M16 13H8"></path>
+                                    <path d="M16 17H8"></path>
+                                </svg>
+                                Ücretsiz Teklif Alın
                             </a>
                             <a href="tel:+905558979342" class="btn btn-outline">
-                                <i class="fas fa-phone"></i> Hemen İletişime Geçin
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                Hemen İletişime Geçin
                             </a>
                         </div>
                     </div>
@@ -199,73 +213,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <img src="img/logo.png" alt="PCMAN Bilişim Teknolojileri Logo" class="footer-logo-image">
-                    </div>
-                    <p class="footer-about">Profesyonel teknik ve yazılım çözümleri sunan, dijital dönüşüm yolculuğunuzda yanınızda olan bir bilişim teknolojileri firmasıyız.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/pcmanbilisim/" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@PCMANBILISIMTEKNOLOJILERI" class="social-link">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@pcman54" class="social-link">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Hizmetlerimiz</h3>
-                    <ul class="footer-links">
-                        <li><a href="web-design.html">Web Tasarım & Geliştirme</a></li>
-                        <li><a href="mobile-app.html">Mobil Uygulama Geliştirme</a></li>
-                        <li><a href="custom-software.html">Özel Yazılım Çözümleri</a></li>
-                        <li><a href="ecommerce.html">E-Ticaret Çözümleri</a></li>
-                        <li><a href="office-setup.html">Ofis Bilgisayar Kurulumları</a></li>
-                        <li><a href="repair-maintenance.html">Onarım ve Bakım Hizmetleri</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Hızlı Bağlantılar</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Ana Sayfa</a></li>
-                        <li><a href="services.html">Hizmetlerimiz</a></li>
-                        <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="contact.html">İletişim</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">İletişim</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-phone"></i> 0555 897 93 42 | 555 897 93 41</li>
-                        <li><i class="fas fa-envelope"></i> info@pcmanbilisim.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Şirintepe Mah. Ayçiçeği Sk. No:1A Kağıthane/İstanbul</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="copyright">© 2026 PCMAN Bilişim Teknolojileri. Tüm hakları saklıdır.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Gizlilik Politikası</a>
-                    <a href="#">Çerez Politikası</a>
-                    <a href="#">Kullanım Şartları</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {{> footer}}
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
+    
+    <!-- Initialize Lucide icons -->
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!-- navbar.hbs (güncellenmiş versiyon) -->
+<nav class="navbar" itemprop="breadcrumb">
+    <div class="container nav-container">
+        <a href="/" class="logo" aria-label="PCMAN Bilişim Ana Sayfa">
+            <img src="/img/logo.png" alt="PCMAN Bilişim Teknolojileri - Bilişim Hizmetleri" class="logo-image" width="150" height="50">
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mobil Menü">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="nav-menu" id="navMenu">
+            <a href="/" class="nav-link {{#if (eq active 'home')}}active{{/if}}">Ana Sayfa</a>
+            <a href="/services" class="nav-link {{#if (eq active 'services')}}active{{/if}}">Hizmetlerimiz</a>
+            <a href="/about" class="nav-link {{#if (eq active 'about')}}active{{/if}}">Hakkımızda</a>
+            <a href="/contact" class="nav-link {{#if (eq active 'contact')}}active{{/if}}">İletişim</a>
+            <a href="tel:+905558979342" class="nav-btn">Hemen Ara</a>
+        </div>
+    </div>
+</nav>
